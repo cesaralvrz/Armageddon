@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <!-- Estilos CSS --> 
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/index.css">
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Fuente "Roboto" de Google --> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <!-- Logo en la pestaña  --> 
+        <link rel="shortcut icon" href="../img/Mancuerna.png" type="image/x-icon">
+    <title> Armageddon </title>
+</head>
+<body id="func">
+    <!-- Barra de Navegación --> 
+    <nav>
+        <div class="WebLogo">
+            <h1>ARMAGEDDON</h1>
+        </div>
+        <!-- Links de la Barra de Navegación --> 
+        <ul class="links">
+            <li>
+                <a href="../index.html">INICIO</a>
+            </li>
+            <li>
+                <a href="../html/precios.html">PRECIOS</a>
+            </li>
+            <li>
+                <a href="../html/rutinas.html">RUTINAS</a>
+            </li>
+            <li>
+              <a href="../html/calculadora.html">CALCULADORA</a>
+            </li>
+            <li>
+                <a href="../html/contacto.html">CONTACTO</a>
+            </li>
+            <li>
+                <a href="../html/preguntas.html">PREGUNTAS</a>
+            </li>
+            <li>
+                <a href="../html/funcionalidad.html">FUNCIONALIDAD</a>
+            </li>
+        </ul>
+    </nav>
+    <main> 
+        <!-- contenedor de la sección de funcionalidades -->
+        <section id="container-func">
+            <h1>Funcionalidades del Sitio:</h1>
+            <div class="func-text">
+                <p>Para la PEC2 implementé las siguientes funcionalidades sobre la PEC1: </p> <br> <hr>
+                <ol>
+                    <li>Anteriormente en la PEC1 las rutinas estaban escritas todas en el HTML, para la PEC2 creé tres archivos JSON para cada rutina (PUSH, PULL & Piernas) y mediante JQuery recogí los valores de cada uno, para crear una tabla para cada rutina. (Esto se puede ver en la página de "rutinas").</li>
+                    <li>Añadí una nueva página llamada "calculadora", la función de esta es calcular el Índice de Masa Muscular (IMC) de los usuarios del sitio web. Mediante un formulario, recojo los valores del usuario (estatura y peso), ambos valores primero los paso por un if para vereficar que son valores válidos
+                        y luego realizo el calculo del IMC (peso/estatura^2). Una vez calculado este dato, asigno que tipo de constitución tiene el usuario en base a su IMC. Finalmente, añado el resultado al HTML.  </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <!-- Estructura del Footer -->
+    <footer>
+      <!-- Logo del Footer -->
+      <div class="columns-footer">
+          <div class="logo-container">
+              <img src="../img/LogoLetras.png" alt="Logo con letras">  
+          </div> 
+
+          <!-- Primera Columna -->
+          <div class="column"> 
+              <h2>¿Necesitas Ayuda?</h2>
+              <a href="../html/contacto.html">Contacto</a>
+              <a href="../html/preguntas.html">Preguntas</a>
+          </div>
+
+          <!-- Segunda Columna -->
+          <div class="column"> 
+              <h2>Más</h2>
+              <a href="../index.html">Inicio</a>
+              <a href="../html/precios.html">Precios</a>
+          </div>
+  
+          <!-- Tercera Columna -->
+          <div class="column"> 
+              <h2>¿Dónde encontrarnos?</h2>
+              <span>
+                  &copy; Armageddon Fitness<br>
+                  Calle de la Compañía<br>
+                  5<br>
+                  37002<br>
+                  Salamanca<br>         
+                  
+              </span>
+          </div>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+[
+    {
+        "numero": "1",
+        "musculo": "Pecho",
+        "ejercicio": "Press Banca",
+        "series": "3",
+        "repeticiones": "6"
+    },
+    {
+        "numero": "2",
+        "musculo": "Pecho",
+        "ejercicio": "Planchas",
+        "series": "3",
+        "repeticiones": "20"
+    },
+    {
+        "numero": "3",
+        "musculo": "Hombro",
+        "ejercicio": "Press Hombros",
+        "series": "3",
+        "repeticiones": "6"
+    },
+    {
+        "numero": "4",
+        "musculo": "Pecho",
+        "ejercicio": "Press Inclinado",
+        "series": "3",
+        "repeticiones": "6"
+    },
+    {
+        "numero": "5",
+        "musculo": "Hombro",
+        "ejercicio": "Elevaciones Laterales",
+        "series": "3",
+        "repeticiones": "6"
+    },
+    {
+        "numero": "6",
+        "musculo": "Triceps",
+        "ejercicio": "Polea",
+        "series": "3",
+        "repeticiones": "6"
+    }
+]
+    

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <!-- Estilos CSS --> 
+        <link rel="stylesheet" href="../styles/reset.css">
+        <link rel="stylesheet" href="../styles/index.css">
+        <!-- Fuente "Roboto" de Google --> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <!-- Logo en la pestaña  --> 
+        <link rel="shortcut icon" href="../img/Mancuerna.png" type="image/x-icon">
+    <title> Contacto </title>
+</head>
+<body>
+    <!-- Barra de Navegación --> 
+    <nav>
+        <div class="WebLogo">
+            <h1>ARMAGEDDON</h1>
+        </div>
+        <!-- Links de la Barra de Navegación --> 
+        <ul class="links">
+            <li>
+                <a href="../index.html">INICIO</a>
+            </li>
+            <li>
+                <a href="../html/precios.html">PRECIOS</a>
+            </li>
+            <li>
+                <a href="../html/rutinas.html">RUTINAS</a>
+            </li>
+            <li>
+              <a href="../html/calculadora.html">CALCULADORA</a>
+            </li>
+            <li>
+                <a href="../html/contacto.html">CONTACTO</a>
+            </li>
+            <li>
+                <a href="../html/preguntas.html">PREGUNTAS</a>
+            </li>
+            <li>
+                <a href="../html/funcionalidad.html">FUNCIONALIDAD</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Formulario -->
+    <div class="Form-Section">
+        <!-- Título del contacto -->
+        <section class="contact-title">
+            <h2> Contáctanos</h2>
+            <h3> Estamos aquí para ayudar</h3>
+        </section>
+        <!-- Form -->
+        <div class="contact-form">
+            <!-- Identificamos la forma con el método "POST" --> 
+            <form id="contact-form" method="POST">
+                 <!-- Escogemos el nombre del imput con el respectivo tipo para cada uno, con un "required" para que sea obligatorio --> 
+                <input name="name" type="text" class="form-control" placeholder="Escribe tu nombre.." required><br>
+                <input name="email" type="email" class="form-control" placeholder="Escribe tu email..." required><br>
+                <!-- Area de texto donde el usuario puede encribir su mensaje -->
+                <textarea name="message" id="text-area" class="form-control" placeholder="Escribe tu mensaje..." rows="4" required></textarea><br>
+                <!-- Botón para enviar el mensaje -->
+                <input type="submit" class="form-control submit" value="Enviar Mensaje">
+            </form>
+        </div>
+    </div>
+    <!-- Artículo para la zona de la ubicación -->
+    <div class="Where-Section">
+        <!-- Texto -->
+        <section class="Where-text">
+            <h3>Nuestra Ubicación:</h3>
+            <p> Universidad Pontificia de Salamanca<br>
+                Calle de la Compaía 5<br>
+                37002<br>
+                Salamanca <br>
+                España
+            </p>
+        </section>
+        <!-- Sección del mapa -->
+        <div class="Map"> 
+            <!-- Código del mapa de google maps -->
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12051.350615337653!2d-5.6669094!3d40.9631352!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x801ea09b2e542c50!2sUniversidad%20Pontificia%20de%20Salamanca!5e0!3m2!1ses!2ses!4v1607865806968!5m2!1ses!2ses" width="700" height="300"></iframe></p>
+        </div>
+    </div>  
+     <!-- Estructura del Footer -->
+     <footer>
+        <!-- Logo del Footer -->
+        <div class="columns-footer">
+            <div class="logo-container">
+                <img src="../img/LogoLetras.png" alt="Logo con letras">  
+            </div> 
+
+            <!-- Primera Columna -->
+            <div class="column"> 
+                <h2>¿Necesitas Ayuda?</h2>
+                <a href="../html/contacto.html">Contacto</a>
+                <a href="../html/preguntas.html">Preguntas</a>
+            </div>
+
+            <!-- Segunda Columna -->
+            <div class="column"> 
+                <h2>Más</h2>
+                <a href="../index.html">Inicio</a>
+                <a href="../html/precios.html">Precios</a>
+            </div>
+    
+            <!-- Tercera Columna -->
+            <div class="column"> 
+                <h2>¿Dónde encontrarnos?</h2>
+                <span>
+                    &copy; Armageddon Fitness<br>
+                    Calle de la Compañía<br>
+                    5<br>
+                    37002<br>
+                    Salamanca<br>         
+                    
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

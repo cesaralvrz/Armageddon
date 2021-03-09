@@ -1,0 +1,44 @@
+[
+    {
+        "numero": "1",
+        "musculo": "Espalda",
+        "ejercicio": "Dominadas",
+        "series": "3",
+        "repeticiones": "10"
+    },
+    {
+        "numero": "2",
+        "musculo": "Espalda",
+        "ejercicio": "Remo",
+        "series": "3",
+        "repeticiones": "8"
+    },
+    {
+        "numero": "3",
+        "musculo": "Espalda",
+        "ejercicio": "Jalón",
+        "series": "3",
+        "repeticiones": "6"
+    },
+    {
+        "numero": "4",
+        "musculo": "Biceps",
+        "ejercicio": "Curl con barra",
+        "series": "3",
+        "repeticiones": "6"
+    },
+    {
+        "numero": "5",
+        "musculo": "Espalda",
+        "ejercicio": "Facepull",
+        "series": "3",
+        "repeticiones": "6"
+    },
+    {
+        "numero": "6",
+        "musculo": "Biceps",
+        "ejercicio": "Martillos",
+        "series": "3",
+        "repeticiones": "6"
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "numero": "1",
+        "musculo": "Piernas",
+        "ejercicio": "Sentadillas",
+        "series": "4",
+        "repeticiones": "6"
+    },
+    {
+        "numero": "2",
+        "musculo": "Piernas",
+        "ejercicio": "Zancadas",
+        "series": "3",
+        "repeticiones": "20"
+    },
+    {
+        "numero": "3",
+        "musculo": "Full-body",
+        "ejercicio": "Peso Muerto",
+        "series": "3",
+        "repeticiones": "6"
+    },
+    {
+        "numero": "4",
+        "musculo": "Biceps Femoral",
+        "ejercicio": "Curl Femoral",
+        "series": "3",
+        "repeticiones": "6"
+    },
+    {
+        "numero": "5",
+        "musculo": "Glúteo",
+        "ejercicio": "Hip Thrust",
+        "series": "3",
+        "repeticiones": "6"
+    },
+    {
+        "numero": "6",
+        "musculo": "Gemelo",
+        "ejercicio": "Extensión de Gemelos",
+        "series": "3",
+        "repeticiones": "6"
+    }
+]

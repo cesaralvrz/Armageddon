@@ -1,0 +1,841 @@
+body {
+    background-color: #535353;
+  }
+
+/* Todo posicionado arriba a la izquierda */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* Estilos del nav */
+nav{
+    /* Orientación en línea recta */
+    display: flex;
+     /* Espacio entre contenido */
+    justify-content: space-around;
+    background-color: rgb(6, 148, 167);
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    /* Altura mínima*/
+    min-height: 8vh;
+    
+}
+/* Logo del Nav */
+.WebLogo{
+    color: #f1f0f0;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+
+/* Links del Nav */
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 55%;   
+}
+/* Texto en el Nav */
+.links a{
+    color: #f1f0f0;
+    letter-spacing: 3px;
+    font-size: 11px;
+    /* Eliminar la línea debajo del texto */
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.links li{
+    /* Eliminar el punto */
+    list-style: none;
+}
+/* Ajustes cuando la pantalla es < 1024px */
+@media screen and (max-width:1024px){
+    .links{
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+    }
+}
+/* Ajustes cuando la pantalla es < 768px */
+@media screen and (max-width:768px){
+    .links{
+        font-size: 4px;
+        display: flex;
+        margin-right: 40px;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .link a{
+        letter-spacing: 0px;
+    }
+    .WebLogo{
+        font-size: 0px;
+    }
+}
+/* Efecto Hover en los links */
+.links :hover{
+    background-color: rgb(2, 102, 116);
+    display: inline-block;
+  }
+  
+/* Estilos del Header */
+.Header{
+    /* Imagen */
+    background-image: url(../img/Imagen1.jpg);
+    /* Ajustes de la Imagen */
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+/* Texto del Header */
+.Header-text{
+    text-align: center;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/* Título Principal del Header */
+.MainTitle{
+    font-size: 550%;
+    letter-spacing: 7px;   
+}
+/* Subtítulos del Header */
+.Subtitle{
+    font-size: 100%;
+    letter-spacing: 30px;  
+    text-align: right;
+}
+/* Estilos del botón del Header */
+.Header button {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    /* Posición absoluto para poder mover el botón */
+    position: absolute;
+    top: 53%;
+    left: 59%;
+    border: none;
+    outline: 0;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 12px 24px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(92, 92, 92);
+    text-align: center;
+    transition: all 0.5s;
+    /* Interacción del puntero */
+    cursor: pointer;
+  }
+/* Efecto Hover en el botón */
+.Header button:hover {
+    background-color: rgb(6, 137, 155);
+    color:white;
+  }
+  /* Estilos del h2 del Main */
+.Content h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    padding: 0px 0px 20px 0px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+/* Sección "Sobre Nosotros" */
+.AboutUs{
+    /* Separamos el texto de la imagen */
+    display: flex;
+    justify-content: space-evenly;
+}
+/* Imagen */
+.Image-AboutUs{
+    height: 700px;
+    width: 44%;
+    margin-bottom: 50px;
+}
+/* Estilos del texto */
+.About-text{
+    text-align: justify;
+    Color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 48%;
+    margin-top: 45px;
+}
+/* Estilos de los h3 */
+.About-text h3{
+    margin-bottom: 15px;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+ /* Círculos del h3 */
+.About-text h3 span{
+    background: rgb(6, 137, 155);
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    margin-top: 10px;
+     /* Centrar el número */
+    padding: 2px;
+    padding-left: 3px;
+    margin-right: 10px;
+    
+}
+/* Estilos de los párrafos del about */
+.About-text p{
+    padding: 0px 0px 30px 15px;  
+    text-align: justify;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+ /* Estilos del main */
+main{
+    padding: 30px 0;
+    width: 95%;
+     /* Margen de la página */
+     margin: auto;
+     overflow: hidden;
+
+}
+
+/* Estilos del footer */
+footer{
+    width: 100vw;
+    display: block;
+    overflow: hidden;
+    padding: 30px 0;
+    box-sizing: border-box;
+    background-color: #18181a;
+}
+/* Contenido adentro del footer */
+.columns-footer{
+    display: block;
+    margin: 0% auto;
+    width: 1100px;
+    height: 100%;
+}
+/* Parte del footer que contiene el logo */
+.columns-footer .logo-container{  
+    width: 35%;
+    float: left;
+    height: 100%;
+    display: block;
+}
+/* Estilos de imagen del footer  */
+.columns-footer .logo-container img{
+    width: 105px;
+    height: auto;
+}
+/* Estilos de la clase "columns-footer" que están en cada columna del footer */
+.columns-footer .column{
+    width: calc(21.6666666667% - 20px);
+    margin-right: 18px;
+    float: left;
+    height: 100%;
+    padding-left: 4%;
+}
+/* Espacio en la derecha de la última columna del footer */
+.columns-footer .column:last-child{
+    margin-right: 0%;
+}
+/* Estilos de los h1 del footer */
+.columns-footer .column h2{
+    font-family:'arial';
+    font-size: 22px;
+    color: white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* Estilos de los bloques del footer */
+.columns-footer .column a{
+    font-family:'arial';
+    font-size: 18px;
+    color: white;
+    display: block;
+    font-weight: 200;
+    width: 100%;
+    margin-bottom: 28px;
+}  
+/* Estilos de los spans del footer */
+.columns-footer .column span{
+    color: white;
+    font-family: 'arial';
+    font-size: 16px;
+    font-weight: 200;
+    display: block;
+    width: 100%;
+ }
+ /* Ajuste de pantalla para el footer*/
+ @media(max-width:800px){
+    .footer .columns-footer{
+        width: 90%;
+    }
+    .columns-footer .logo-container,
+    .columns-footer .column{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .logo-container{
+        margin-left: 25px;
+    }
+}
+/* Ajuste de pantalla */
+@media screen and (max-width:800px){
+    header{
+        background-position: center;
+        text-align: center;
+    }
+    .Header{
+        background-position: center;
+    }
+    .Header-text{
+        width: 80%;
+        flex-direction: column;
+    }
+    .MainTitle{
+        font-size: 300%;
+    }
+    .Subtitle{
+        font-size: 90%; 
+        text-align: center;
+    }
+    .Content h2{
+        font-size: 60px;
+        padding: 0px 0px 0px 0px;
+    }
+    .AboutUs{ 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .About-text{
+        width:90%;
+    }
+    .About-text p{
+        font-size: 17px;
+    }
+    .Image-AboutUs{
+       display: none;
+    }
+    .Lang-es{
+        position: absolute;
+        top: 70px;
+        left: 94%;
+        width: 20px;
+    }
+}
+
+
+/* precios.html  */
+
+/* Estilos de la sección precios */
+.Prices-Section{
+    /* Imagen */
+    background-image: url(../img/Imagen5.jpg);
+    /* Ajustes de la imagen */
+    height: 778px;
+    background-size: contain; 
+    background-repeat: no-repeat; 
+
+}
+/* Estilos del header */
+.Prices-text {
+    text-align: center;   
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos del título principal */
+.MainTitleP{
+    font-size: 400%;
+    letter-spacing: 20px;
+    position: absolute;
+    top: 30%;
+    left: 37%; 
+    color: rgb(6, 137, 155); 
+}
+/* Estilo de las columnas */
+.Rows{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+/* Estilos de los párrafos de las columnas */
+.Rows p{
+    padding-top: 30px;
+    line-height: 40px;
+    color: rgb(59, 59, 59); 
+}
+/* Estilos de los h3 en las columnas */
+.Rows h3{
+    letter-spacing: 3px;
+    color: rgb(6, 137, 155);
+}
+/* Estilos de las líneas debajo de los h3 */
+.Rows h3:after{
+    content: '';
+    background: rgb(6, 137, 155);
+    display: block;
+    width: 230px;
+    height: 3px;
+    margin: 10px auto;
+}
+/* Estilos de cada columna */
+/* Posición de la Columna 1 */
+.Column-price1{
+    position: absolute;
+    top: 45%;
+    left: 23%;
+}
+/* Posición de la Columna 2 */
+.Column-price2{
+    position: absolute;
+    top: 45%;
+    left: 44%;
+}
+/* Posición de la Columna 3 */
+.Column-price3{
+    position: absolute;
+    top: 45%;
+    left: 63%;
+}
+
+/* Ajustes de imagen para otros dispositivos */
+@media screen and (max-width:1300px){
+    #body-precios{
+        background: linear-gradient(rgba(255, 255, 255, 0.863),rgba(255, 255, 255, 0.863)),url(img/Imagen8.jpg);
+    }
+    Header{
+        text-align: center;
+    }
+    .Prices-Section{
+       background-image: none;
+    }
+
+}
+@media screen and (max-width:1200px){
+    #body-precios{
+        height: 900px;
+        background: linear-gradient(rgba(255, 255, 255, 0.863),rgba(255, 255, 255, 0.863)),url(img/Imagen8.jpg);
+    }
+    Header{
+        text-align: center;
+        height: 1200px;;
+    }
+    .MainTitleP{
+        font-size: 250%;
+        position: relative;
+        top: 20%;
+        left: 1%;
+        margin-top: 100px;
+    }
+    .Column-price1{
+        position: relative;
+        top: 10%;
+        left: 1%;
+        margin-top: 45px;
+    }
+    .Column-price2{
+        position: relative;
+        top: 10%;
+        left: 1%;
+        margin-top: 45px;
+    }
+    .Column-price3{
+        position: relative;
+        top: 10%;
+        left: 1%;
+        margin-top: 45px;
+    }
+}
+
+
+/* contacto.html */
+
+/* Estilos de la seccón del formulario */
+.Form-Section{
+    /* Imagen de fondo */
+    background-image: url(../img/Imagen6.jpg);
+    /* Ajustes de la imagen */
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+/* Estilos del h1 */
+.contact-title h2{
+    font-size: 70px;
+    letter-spacing: 20px; 
+    padding-top: 90px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255); 
+}
+/* Estilos del h3 */
+.contact-title h3{
+    padding-top: 15px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255); 
+}
+/* Formulario */
+.form-control{
+    margin-top: 37px;
+    width: 600px;
+    /* Hacer el bloque transparente */
+    background: transparent;
+    /* Eliminamos border y la línea de afuera para una aparencia más elegante */
+    border: none;
+    outline: none;
+    /* Línea debajo del texto */
+    border-bottom: 1px solid rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+/* Asignamos la fuente a la area de texto del formulario */
+#text-area{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/* Resalto de color al seleccionar la casilla */
+::placeholder{
+    color: rgb(255, 255, 255); 
+}
+
+/* Estilos del botón */
+input[type=submit]{
+    width: 42%;
+    background-color: rgb(0, 165, 187);
+    color: white;
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.5s;
+}
+/* Efecto hover del botón */
+input[type=submit]:hover {
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 165, 187);
+}
+/* Estilos de la sección de ubicación */
+.Where-Section{
+    background: rgb(1, 144, 163);
+    position: relative;
+    width: 100%;
+    height: 400px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+/* Estilos del h3 */
+.Where-text h3{
+    position: absolute;
+    left: 9%;
+    top: 28%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+/* Estilos del parrafo */
+.Where-text p{
+    position: absolute;
+    left: 9%;
+    top: 43%;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+/* Mapa de Google Maps */
+.Map{
+    position: absolute;
+    left: 45%;
+    top: 12%
+}
+
+ /* Ajustes para otros dispositivos */
+ @media screen and (max-width:1200px){
+    .Form-Section{
+        background-position: center;
+    }
+    .contact-title h1{
+        font-size: 40px;
+    }
+    .contact-form{
+        width: 80%;
+    }
+    .form-control{
+        width: 70%;
+        margin-left: 120px;
+    }
+    .Where-Section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Map{
+        display: none;
+    }
+    
+}
+
+
+/* preguntas.html */
+
+/* Estilos del body de preguntas */
+#body-preguntas{
+    /* Añadinos un gradiante a la imagen de fondo */
+    background: linear-gradient(rgba(255, 255, 255, 0.062),rgba(0, 217, 255, 0.192)),url(/img/Imagen7.jpg);
+    background-size: cover;
+}
+.FAQs-block{
+    height: 675px;
+}
+/* Estilos de la caja de preguntas */
+.box{
+    width: 450px;
+    margin: 160px auto;
+    position: relative;
+    left: -10%;
+    background: rgb(65, 64, 64);
+    border-radius: 7px;
+    box-shadow: 1px 2px 4px rgba(0,0,0);
+    font-family: 'Roboto', sans-serif;
+}
+/* Estilos del título de la caja */ 
+.box .FAQs-heading {
+    background: rgb(6, 137, 155);
+    border-radius: 7px 7px 0px 0px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+/* Estilos de la seccón de preguntas */
+.faqs{
+    padding: 10px 20px 20px;
+    
+}
+/* Estilos de los detalles que contienen las preguntas */
+details{
+    background: rgb(95, 95, 95);
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Estilos de las respuestas de las preguntas */
+.text{
+    color: rgb(2, 180, 204);
+}
+/* (Preguntas) */
+details summary{
+    outline: none;
+}
+/* Estilo de la caja de los párrafos (Respuestas) */
+.faqs p{
+    padding-top: 8px;
+}
+
+/* Ajustes para otros dispositivos */
+@media screen and (max-width:800px){
+    .box{
+        position: relative;
+        left: 2px; 
+    }
+}
+
+
+/* rutinas.html */
+
+/* Contenido de la tabla */
+.content-table {
+    border-collapse: collapse;
+    width: 50%;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 25% 40px;
+    text-align: center;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  /* Estilos de los tr en el thead */
+  .content-table thead tr {
+    background-color: rgb(6, 148, 167);
+    color: #ffffff;
+    font-weight: bold;
+  }
+  /* ths y tds de la tabla */
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  .th-leader{
+    color:rgb(29, 29, 29)
+  }
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(6, 148, 167);
+  }
+
+  /* Ajustes cuando la pantalla es < 1024px */
+@media screen and (max-width:1024px){
+    .content-table {
+        width: 70%;
+        margin: 20px 130px 40px;;
+      }
+}
+/* Ajustes cuando la pantalla es < 768px */
+@media screen and (max-width:768px){
+    .content-table {
+        width: 90%;
+        margin: 20px 4% 40px;;
+      }
+}
+
+
+/* Sección Calculadora */
+
+#imc{
+    background-color: rgb(226, 226, 226);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* h1 del contenedor */
+#container-imc h1{
+    font-size: 35px;
+    margin-top: 15px;
+    margin-bottom: 2%;
+    color: #272727;
+    text-align: center;
+    text-transform: uppercase;
+ }
+
+ /* Texto del IMC */
+.imc-text{
+    border-radius: 5px;
+    background-color: rgb(6, 148, 167);
+    width: 60%;
+    color: white;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+/* Lista del texto */
+.imc-text ul li{
+	list-style:circle;
+	margin-left:30px;
+	margin-top:10px;
+}
+
+/* Estética del formulario */
+.imc-form{
+    background-color: rgb(226, 226, 226);
+    color: #272727;
+    width: 60%;
+    border-radius: 25px;
+    border: 1px solid rgb(136, 136, 136);
+    padding: 20px;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* Estilos de los inputs */
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* Estilos del botón de la calculadora */
+input.imc-button[type=submit]{
+    width: 42%;
+    background-color: rgb(226, 226, 226);
+    color: rgb(0, 165, 187);
+    border: 2px solid rgb(0, 165, 187);
+    padding: 14px 20px;
+    margin: 15px 0;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Efecto hover del botón */
+input.imc-button[type=submit]:hover {
+    background-color: rgb(0, 165, 187);
+    color:white;
+}
+
+/* Resultado del cálculo */
+.title-result{
+    text-align: center;
+    color: rgb(6, 148, 167);
+    font-size: 25px;
+}
+
+/* Parte de Funcionalidad */
+
+#func{
+    background-color: rgb(226, 226, 226);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* H1 del contenedor */
+#container-func h1{
+    color: rgb(6, 148, 167);
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 2%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Texto de las funcionalidades */
+.func-text{
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid rgb(136, 136, 136);
+    background-color: rgb(226, 226, 226);
+    width: 60%;
+    color: #353535;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 120px;
+}
+
+/* Lista ordenada del texto */
+.func-text ol li{
+    list-style: lower-alpha;
+	margin-left:30px;
+	margin-top:10px;
+}
